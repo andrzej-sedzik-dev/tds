@@ -1,0 +1,24 @@
+kasowanie lokalnego gita:
+
+a)
+rm -rf .git / usuń plik .git z katalogu projektu a następnie VCS -> Refresh czy coś takiego
+
+b)
+Skasować repozytorium lokalne. Lokalnie wystarczy że wywalisz folder .git
+
+
+Zakładanie master gdy repozytorium istnieje na github:
+
+1)
+git init
+
+2)
+git remote add origin https://github.com/andrzej-sedzik-dev/tds.git
+
+3)
+git add .
+git commit -m "szkielet projektu"
+
+4)
+git push -u origin master
+
