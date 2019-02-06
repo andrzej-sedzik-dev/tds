@@ -22,3 +22,5 @@ git commit -m "szkielet projektu"
 4)
 git push -u origin master
 
+
+II
