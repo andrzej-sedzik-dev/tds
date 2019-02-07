@@ -5,7 +5,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/client")
 public class ClientController {
 
   ClientServiceImpl clientService;
@@ -15,7 +14,7 @@ public class ClientController {
   }
 
 
-  @RequestMapping("/all")
+  @RequestMapping("/")
   public String getAll(){
     return "index";
   }
