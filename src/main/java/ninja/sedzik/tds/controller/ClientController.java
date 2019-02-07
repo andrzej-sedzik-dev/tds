@@ -13,8 +13,6 @@ public class ClientController {
     this.clientService = clientService;
   }
 
-
-  @RequestMapping("/")
   public String getAll(){
     return "index";
   }
