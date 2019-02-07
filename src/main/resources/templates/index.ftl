@@ -36,7 +36,7 @@
         O systemie
       </h1>
       <div>
-        System zarządza bazą dazą danych klientów Telekomunikacj Polskiej.
+        System zarządza bazą dazą danych klientów Telekomunikacji Polskiej.
       </div>
     </div>
   </div>
