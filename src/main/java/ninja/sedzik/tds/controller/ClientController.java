@@ -1,10 +1,8 @@
 package ninja.sedzik.tds.controller;
 
-import ninja.sedzik.tds.model.Client;
 import ninja.sedzik.tds.service.ClientServiceImpl;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping("/client")
@@ -19,7 +17,7 @@ public class ClientController {
 
   @RequestMapping("/all")
   public String getAll(){
-    return "all";
+    return "index";
   }
 
 

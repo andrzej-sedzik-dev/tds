@@ -1,0 +1,115 @@
+other deploy demo to Heroku. - deploy success but something is wrong.
+
+https://www.youtube.com/watch?v=hE1i_LhL_Nc
+Deploy Angular 6 Project Using Heroku
+
+1) twoze angularowa aplikację.
+2) odpalam ją dla testu.
+
+
+3) instaluje expressa w folderze angulara.
+npm install express --save
+
+
+4)
+dodaje plik server.js wewnątrz głównego katalogu
+uzupełniam go:
+
+    //Install express server
+    const express = require('express');
+    const path = require('path');
+
+    const app = express();
+
+    // Serve only the static files form the dist directory
+    // Replace the '/dist/<to_your_project_name>'
+    app.use(express.static(__dirname + '/dist/<to_your_project_name>'));
+
+    app.get('*', function(req,res) {
+      // Replace the '/dist/<to_your_project_name>/index.html'
+      res.sendFile(path.join(__dirname + '/dist/<to_your_project_name>/index.html'));
+    });
+    // Start the app by listening on the default Heroku port
+    app.listen(process.env.PORT || 8080);
+
+
+5)
+
+//Install express server
+const express = require('express');
+const path = require('path');
+
+const app = express();
+
+// Serve only the static files form the dist directory
+// Replace the '/dist/<to_your_project_name>'
+app.use(express.static(__dirname + '/dist/tds-angular-client'));
+
+app.get('*', function(req,res) {
+  // Replace the '/dist/<to_your_project_name>/index.html'
+  res.sendFile(path.join(__dirname + '/dist/tds-angular-client/index.html'));
+});
+// Start the app by listening on the default Heroku port
+app.listen(process.env.PORT || 8080);
+
+
+6)
+Konfigurujemy package.json
+
+a)
+  "scripts": {
+    "ng": "ng",
+    "start": "node server.js",
+    "build": "ng build --prod",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "postinstall": "ng build --oat --prod"
+  },
+
+b)
+BEFORE:
+    "tslint": "~5.9.1",
+    "typescript": "~2.5.3"
+  }
+}
+AFTER:
+
+    "ts-node": "~4.1.0",
+    "tslint": "~5.9.1",
+    "typescript": "~2.5.3"
+  },
+  "engines": {
+    "node": "~8.9.1",
+    "npm": "~6.0.0"
+  }
+}
+
+7)
+Teraz wysyłamy do Heroku. (Oczywiście mamy zainstalowane Heroku CLI).
+heroku login
+email:
+pass:
+
+8)
+Create Heroku project:
+>heroku create tds-deploy2019
+
+Creating ⬢ tds-deploy2019... done
+https://tds-deploy2019.herokuapp.com/ | https://git.heroku.com/tds-deploy2019.git
+
+
+9)
+Go to Angular project and sent it to git.
+heroku git remote -a tds-deploy2019
+
+
+
+
+
+
+
+
+
+
+

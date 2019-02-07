@@ -1,0 +1,13 @@
+deploy angular to AZURE.
+it is done - ok.
+
+1)
+git remote -v (sprawdzamy - inicjalizację gita).
+
+2)
+Czyli kopiując cały projekt skopiowałem wszystko wraz z plikiem .git
+- wszystko jest podgrane - ok.
+
+C:\Users\paral\Desktop\clouds\Heroku\spring\pro1\tds>git remote -v
+origin  https://github.com/andrzej-sedzik-dev/tds.git (fetch)
+origin  https://github.com/andrzej-sedzik-dev/tds.git (push)

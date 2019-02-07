@@ -1,0 +1,98 @@
+deploy angular to heroku.
+
+
+1)
+inside my app: tds-angular-client, go comand
+>heroku create
+
+a)
+write email and pass
+
+Creating app... !
+ !    Invalid credentials provided.
+heroku: Enter your login credentials
+email:
+pass:
+Logged in as andrzej.sedzik.dev@gmail.com
+Creating app... done, ⬢ cryptic-reef-88769
+https://cryptic-reef-88769.herokuapp.com/ | https://git.heroku.com/cryptic-reef-88769.git
+
+
+2)
+login to heroku
+> heroku login
+
+
+heroku: Enter your login credentials
+Email [andrzej.sedzik.dev@gmail.com]: andrzej.sedzik.dev@gmail.com
+Password: ***********
+Logged in as andrzej.sedzik.dev@gmail.com
+
+
+
+3)
+>heroku create
+
+C:\Users\paral\Desktop\clouds\heroku-spring-pro\pro1\tds\tds-angular-client>heroku create
+Creating app... done, ⬢ radiant-chamber-63195
+https://radiant-chamber-63195.herokuapp.com/ | https://git.heroku.com/radiant-chamber-63195.git
+
+
+!! Powstały dwa nowe linki do aplikcaji
+tj jakbym założył nowa apkę poprzez deploy
+
+- tylko obecnie nie mam z tego repo.
+
+
+4)
+- kopiuje na wszelki wypadek plik package.json
+cp package.json package.development.json.backup
+
+
+5)
+Teraz możemy modyfikować nasz plik package.json.
+https://devcenter.heroku.com/categories/deployment-integrations
+
+BEFORE:
+
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve proxy.conf.json",
+    "build": "ng build --prod",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+
+AFTER:
+  "scripts": {},
+
+AFTER-II
+
+  "scripts": {
+    "start": "node dist/server/server.bundle.js"
+  },
+  "engines": {
+    "node": "10.3.0",
+    "npm": "5.6.0"
+  },
+
+
+4)
+ung build --prod // to nie dziła wiec daje to:
+>ng build --prod
+
+5)
+utworzył się nowy folder dist ale bez tych folderów
+
+6)
+git add -A
+git commit -m "My Deploy"
+git push heroku master
+
+7)
+Następnie można zmieniać i wysyłać comity do gita-heroku
+- ja to już zrobiłem po prostu wszystko kopiując do gita i dopiero przenosząc do heroku...
+
+8)
+no niby build success ale ja mam błędy.

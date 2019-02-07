@@ -24,3 +24,52 @@ web: java $JAVA_OPTS -jar target/tds-0.0.1-SNAPSHOT.jar -Dserver.port=$PORT $JAR
 3)
 fix the properties to ron in Herocu
 server.port=${PORT:8080}
+
+4)
+Heroku (we have got a cleardb configuret).
+Now we can deploy/connect to github/
+[button] deploy branch
+
+
+5)
+https://springtds.herokuapp.com/
+cool - the app is ready.
+
+Whitelabel Error Page
+This application has no explicit mapping for /error, so you are seeing this as a fallback.
+
+BROWSER
+Wed Feb 06 20:58:19 UTC 2019
+There was an unexpected error (type=Not Found, status=404).
+No message available
+
+b)
+
+https://springtds.herokuapp.com/rest/all
+
+    [
+        {
+        id: null,
+        username: "first-user"
+        },
+        {
+        id: null,
+        username: "second-user"
+        },
+        {
+        id: null,
+        username: "nextone-user"
+        },
+        {
+        id: null,
+        username: "again-user"
+        },
+        {
+        id: null,
+        username: "other-user"
+        },
+        {
+        id: null,
+        username: "old-user"
+        }
+    ]
