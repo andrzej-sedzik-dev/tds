@@ -17,7 +17,6 @@ public class RestController {
     this.clientService = clientService;
   }
 
-
   @RequestMapping("/all")
   @ResponseBody
   public Iterable<Client> getAll(){
@@ -28,3 +27,14 @@ public class RestController {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+

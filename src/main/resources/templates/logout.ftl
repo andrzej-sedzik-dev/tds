@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Videopoint tutorial">
   <link rel="icon" href="/ico/favicon.ico">
-  <title>TeleDataSystem</title>
+  <title>Logout</title>
   <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
   <link href="/css/dashboard.css" rel="stylesheet">
 </head>
@@ -26,18 +26,18 @@
   <div class="row">
     <div class="col-sm-3 col-md-2 sidebar">
       <ul class="nav nav-sidebar">
-        <li class="active"><a href="/index">O systemie</a></li>
+        <li class="active"><a href="#"></a></li>
         </br>
-        <li><a href="/rest/all">Wyświetl listę klientów</a></li>
+        <li><a href="/logout">Wyloguj</a></li>
         <li><a href="/">BACK</a></li>
       </ul>
     </div>
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
       <h1>
-        O systemie
+        Wylogowywanie
       </h1>
       <div>
-        System zarządza bazą dazą danych klientów Telekomunikacji Polskiej.
+        Aby się wylogować wciśnij przycisk Logout
       </div>
     </div>
   </div>

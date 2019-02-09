@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Videopoint tutorial">
   <link rel="icon" href="/ico/favicon.ico">
-  <title>TeleDataSystem</title>
+  <title>Settings</title>
   <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
   <link href="/css/dashboard.css" rel="stylesheet">
 </head>
@@ -26,18 +26,18 @@
   <div class="row">
     <div class="col-sm-3 col-md-2 sidebar">
       <ul class="nav nav-sidebar">
-        <li class="active"><a href="/index">O systemie</a></li>
+        <li class="active"><a href="#"></a></li>
         </br>
-        <li><a href="/rest/all">Wyświetl listę klientów</a></li>
+        <li><a href="/settings">Edytuj</a></li>
         <li><a href="/">BACK</a></li>
       </ul>
     </div>
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
       <h1>
-        O systemie
+        Ustawienia
       </h1>
       <div>
-        System zarządza bazą dazą danych klientów Telekomunikacji Polskiej.
+        Jeśli chcesz dodać zdjęcie infomacje o wszykształceniu kliknij w setting
       </div>
     </div>
   </div>
