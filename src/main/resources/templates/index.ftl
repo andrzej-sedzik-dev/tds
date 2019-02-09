@@ -29,15 +29,15 @@
         <li class="active"><a href="/index">O systemie</a></li>
         </br>
         <li><a href="/rest/all">Wyświetl listę klientów</a></li>
-        <li><a href="/">BACK</a></li>
       </ul>
     </div>
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
       <h1>
-        O systemie
+        Lista Klientów
       </h1>
       <div>
-        System zarządza bazą dazą danych klientów Telekomunikacji Polskiej.
+        Kliknięcie spowoduje wywołanie adresu localhost:8080/rest/all.
+        <p><a href="/">(BACK)</a></p>
       </div>
     </div>
   </div>
