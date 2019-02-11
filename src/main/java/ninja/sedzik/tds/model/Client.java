@@ -12,8 +12,15 @@ public class Client {
   private Long id;
   private String username;
 
+  public Client(){}
+
   public Client(String username) {
     this.username = username;
+  }
+
+  public Client(Long id, String username) {
+    this.username = username;
+    this.id = id;
   }
 
   public Long getId() {

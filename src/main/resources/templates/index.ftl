@@ -17,7 +17,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <span class="navbar-brand">TeleDataSystem</span>
+      <span class="navbar-brand">TeleDataSystem - BACKEND</span>
     </div>
 
 </nav>
@@ -26,9 +26,9 @@
   <div class="row">
     <div class="col-sm-3 col-md-2 sidebar">
       <ul class="nav nav-sidebar">
-        <li class="active"><a href="/index">O systemie</a></li>
+        <li class="active"><a href="/#">O systemie</a></li>
         </br>
-        <li><a href="/rest/all">Wyświetl listę klientów</a></li>
+        <li><a href="#">Wyświetl listę klientów</a></li>
       </ul>
     </div>
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">

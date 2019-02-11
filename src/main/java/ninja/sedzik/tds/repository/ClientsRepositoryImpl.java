@@ -17,16 +17,14 @@ public class ClientsRepositoryImpl implements ClientsRepositoryInterface{
 
   private List<Client> clients = new ArrayList<Client>();
 
-
-
   @PostConstruct
   private void init() {
-    clients.add(new Client("first-user"));
-    clients.add(new Client("second-user"));
-    clients.add(new Client("nextone-user"));
-    clients.add(new Client("again-user"));
-    clients.add(new Client("other-user"));
-    clients.add(new Client("old-user"));
+    clients.add(new Client(1L, "Klient Andrzej"));
+    clients.add(new Client(2L, "Klient Wojtek"));
+    clients.add(new Client(3L, "Klient Lidia"));
+    clients.add(new Client(4L, "Klient Jolanta"));
+    clients.add(new Client(5L, "Klient Angelina"));
+    clients.add(new Client(6L, "Klient Rafał"));
   }
 
 
