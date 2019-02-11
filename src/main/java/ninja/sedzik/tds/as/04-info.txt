@@ -11,3 +11,18 @@ Czyli kopiując cały projekt skopiowałem wszystko wraz z plikiem .git
 C:\Users\paral\Desktop\clouds\Heroku\spring\pro1\tds>git remote -v
 origin  https://github.com/andrzej-sedzik-dev/tds.git (fetch)
 origin  https://github.com/andrzej-sedzik-dev/tds.git (push)
+
+
+3)
+Commit cofający zmiany
+
+Revert
+Jeśli uprawnienia na branchu nie zezwalają na modyfikację historii,
+to nie pozostaje nic innego jak revert, czyli utworzenie commita odwracającego zmiany. W tym wypadku należy:
+
+Utworzyć commit cofający zmiany
+git revert HEAD
+GIT automatycznie zasugeruje opis commita w postaci: Revert “xxx”
+
+Wypchnąć zmiany do zdalnego repozytorium
+git push
